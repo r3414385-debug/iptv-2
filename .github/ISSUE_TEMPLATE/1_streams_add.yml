@@ -1,10 +1,10 @@
-name: ➕ Add stream
+name: ➕ Add stream CBC 
 description: Request to add a new stream link into the playlist
-title: 'Add: '
-labels: ['streams:add']
+title: 'Add: 'CBC 
+labels: ['streams:add'] iptv or
 
 body:
-  - type: input
+  - type: input cbctv.az 
     id: stream_id
     attributes:
       label: Stream ID (required)
@@ -15,7 +15,7 @@ body:
 
   - type: input
     id: stream_url
-    attributes:
+    attributes:https://stream.cbctv.az:5443/LiveApp/streams/cbctv.m3u8
       label: Stream URL (required)
       description: Link to be added to the playlist
       placeholder: 'https://example.com/playlist.m3u8'
@@ -34,7 +34,7 @@ body:
         - 1080i
         - 720p
         - 576p
-        - 576i
+        - 576i 
         - 480p
         - 480i
         - 360p
@@ -73,3 +73,4 @@ body:
       options:
         - label: I have read [Contributing Guide](https://github.com/iptv-org/iptv/blob/master/CONTRIBUTING.md)
           required: true
+
